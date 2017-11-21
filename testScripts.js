@@ -8,8 +8,14 @@ var message = "?status=frustrated&bubble=burst"
             console.log(this.responseText);
         }
     };
+
+    
+    var xhr = createCORSRequest('GET', custURL);
+    xhr.send();
+    /*
     xhttp.open("POST", custURL + message);
-   xhttp.send();
+    xhttp.send();
+    */
 }
 
 
