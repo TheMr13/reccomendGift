@@ -1,5 +1,5 @@
 function posting() {
-var custURL = "thealphatest.mybluemix.net/testing";
+var custURL = "http://thealphatest.mybluemix.net/testing";
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
