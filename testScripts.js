@@ -1,5 +1,5 @@
 function posting() {
-var custURL = "http://thealphatest.mybluemix.net/testing";
+var custURL = "https://thealphatest.mybluemix.net/testing";
 var message = "?status=frustrated&bubble=burst"
 
     var xhttp = new XMLHttpRequest();
