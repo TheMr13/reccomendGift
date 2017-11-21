@@ -1,5 +1,6 @@
 function posting() {
 var custURL = "http://thealphatest.mybluemix.net/testing";
+var message = "?status=frustrated&bubble=burst"
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -7,7 +8,7 @@ var custURL = "http://thealphatest.mybluemix.net/testing";
             console.log(this.responseText);
         }
     };
-    xhttp.open("POST", custURL);
+    xhttp.open("POST", custURL + message);
    xhttp.send();
 }
 
