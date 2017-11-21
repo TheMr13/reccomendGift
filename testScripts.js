@@ -7,7 +7,7 @@ var custURL = "thealphatest.mybluemix.net/testing";
             console.log(this.responseText);
         }
     };
-    xhttp.open( custURL);
+    xhttp.open("POST", custURL);
    xhttp.send();
 }
 
