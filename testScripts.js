@@ -1,6 +1,6 @@
 function posting() {
 var custURL = "https://thealphatest.mybluemix.net/testing";
-var message = "?userInput=" + document.getElementById("userInput").text
+var message = "?userInput=" + document.getElementById("userInput").value
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
