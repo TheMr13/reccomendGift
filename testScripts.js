@@ -1,6 +1,6 @@
 function posting() {
 var custURL = "https://thealphatest.mybluemix.net/testing";
-var message = "?status=frustrated&bubble=burst"
+var message = "?userInput=" + document.getElementById("userInput")
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
