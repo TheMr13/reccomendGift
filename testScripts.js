@@ -24,12 +24,13 @@ var response;
     xhttp.send();
 }
 
-function bullshit(){
+function bullshit() {
     var para = document.createElement("P");                       
     var t = document.createTextNode("This is a paragraph.");      
     para.appendChild(t);   
     para.setAttribute("id", "onTheRight")                                     
-    document.getElementById("chatBox").appendChild(para);           
+    document.getElementById("chatBox").appendChild(para);  
+}         
 
 /*
 if (count == 0){
