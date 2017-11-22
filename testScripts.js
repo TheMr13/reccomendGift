@@ -14,8 +14,7 @@ var message2 = "?userInput=" + document.getElementById("userInput").value + "pos
     xhttp.open("GET", custURL + message1);
     xhttp.send();
 
-    xhttp.open("POST", custURL + message2);
-    xhttp.send();
+    
     
     
     /*
