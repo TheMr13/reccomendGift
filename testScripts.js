@@ -7,11 +7,16 @@ function scrolling() {
 
 function posting() {
 
+    var scrollBox
+
     var para = document.createElement("P");                       
     var t = document.createTextNode(document.getElementById("userInput").value);      
     para.appendChild(t);   
     para.setAttribute("id", "onTheLeft")                                     
-    document.getElementById("chatBox").appendChild(para);  
+    document.getElementById("chatBox").appendChild(para);
+    
+    scrollBox = document.getElementById("chatBox")
+    scrollBox.scrollTop = scrollBox.scrollHeight;
 
 var custURL = "https://thealphatest.mybluemix.net/testing";
 var message = "?userInput=" + document.getElementById("userInput").value
@@ -32,6 +37,9 @@ var response;
             para.appendChild(t);   
             para.setAttribute("id", "onTheRight")                                     
             document.getElementById("chatBox").appendChild(para);  
+
+            scrollBox = document.getElementById("chatBox")
+            scrollBox.scrollTop = scrollBox.scrollHeight;
 
             
 
