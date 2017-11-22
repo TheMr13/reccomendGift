@@ -10,7 +10,7 @@ var message = "?status=frustrated&bubble=burst"
     };
 
     
-    var xhr = createCORSRequest('GET', custURL);
+    var xhr = createCORSRequest('GET', custURL, message);
     xhr.send();
     /*
     xhttp.open("POST", custURL + message);
