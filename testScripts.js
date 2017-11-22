@@ -26,7 +26,7 @@ var response;
             para.setAttribute("id", "onTheRight")                                     
             document.getElementById("chatBox").appendChild(para);  
 
-            chatbox.scrollTop = chatbox.scrollHeight;
+            
 
         }
     };
@@ -34,6 +34,8 @@ var response;
 
     xhttp.open("GET", custURL + message);
     xhttp.send();
+
+    chatbox.scrollTop = chatbox.scrollHeight;
 }     
 
 /*
