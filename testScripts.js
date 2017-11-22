@@ -12,13 +12,12 @@ var response;
 
             console.log(response);
             console.log(response.output.text[0]);
+            document.getElementById("myResult").html = response.output.text[0];
         }
     };
 
 
     xhttp.open("GET", custURL + message);
     xhttp.send();
-
-    console.log(response);
     
 }
