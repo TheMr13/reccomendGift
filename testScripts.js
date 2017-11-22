@@ -3,6 +3,11 @@ function scrolling() {
     //chatbox.scrollTop = chatbox.scrollHeight;
 }
 
+function testing() {
+    console.log("testing is working");
+    //chatbox.scrollTop = chatbox.scrollHeight;
+}
+
 
 function posting() {
 
