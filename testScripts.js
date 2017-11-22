@@ -11,6 +11,7 @@ var response;
             response = JSON.parse(this.responseText);
 
             console.log(response);
+            console.log(response.output.text[0]);
         }
     };
 
