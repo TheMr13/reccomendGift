@@ -26,8 +26,7 @@ var response;
             para.setAttribute("id", "onTheRight")                                     
             document.getElementById("chatBox").appendChild(para);  
 
-            var objDiv = document.getElementById("chatBox");
-            objDiv.scrollTop = objDiv.scrollHeight;
+            chatbox.scrollTop = chatbox.scrollHeight;
 
         }
     };
