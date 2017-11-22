@@ -12,7 +12,7 @@ var response;
 
             console.log(response);
             console.log(response.output.text[0]);
-            document.getElementById("myResult").innerHTML = response.output.text[0];
+            document.getElementById("myResult").innerHTML = document.getElementById("myResult").value + response.output.text[0]
         }
     };
 
