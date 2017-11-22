@@ -1,4 +1,11 @@
 function posting() {
+
+    var para = document.createElement("P");                       
+    var t = document.createTextNode(document.getElementById("userInput").value);      
+    para.appendChild(t);   
+    para.setAttribute("id", "onTheLeft")                                     
+    document.getElementById("chatBox").appendChild(para);  
+
 var custURL = "https://thealphatest.mybluemix.net/testing";
 var message = "?userInput=" + document.getElementById("userInput").value
 
@@ -19,23 +26,13 @@ var response;
             para.setAttribute("id", "onTheRight")                                     
             document.getElementById("chatBox").appendChild(para);  
 
-
-
         }
     };
 
 
     xhttp.open("GET", custURL + message);
     xhttp.send();
-}
-
-function bullshit() {
-    var para = document.createElement("P");                       
-    var t = document.createTextNode("This is a paragraph.");      
-    para.appendChild(t);   
-    para.setAttribute("id", "onTheRight")                                     
-    document.getElementById("chatBox").appendChild(para);  
-}         
+}     
 
 /*
 if (count == 0){
