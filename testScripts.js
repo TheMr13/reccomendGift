@@ -1,6 +1,6 @@
-function scroll(){
+function scroll() {
     console.log("working");
-    chatbox.scrollTop = chatbox.scrollHeight;
+    //chatbox.scrollTop = chatbox.scrollHeight;
 }
 
 
