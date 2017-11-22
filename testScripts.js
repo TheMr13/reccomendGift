@@ -1,6 +1,7 @@
 function posting() {
 var custURL = "https://thealphatest.mybluemix.net/testing";
-var message = "?userInput=" + document.getElementById("userInput").value
+var message1 = "?userInput=" + document.getElementById("userInput").value  + "get"
+var message2 = "?userInput=" + document.getElementById("userInput").value + "post"
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -10,10 +11,10 @@ var message = "?userInput=" + document.getElementById("userInput").value
     };
 
 
-    xhttp.open("GET", custURL + message + "get");
+    xhttp.open("GET", custURL + message1);
     xhttp.send();
 
-    xhttp.open("POST", custURL + message + "post");
+    xhttp.open("POST", custURL + message2);
     xhttp.send();
     
     
