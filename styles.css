@@ -3,7 +3,8 @@
     height: 300px;
     max-width: auto;
     width: 100%;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     overflow: auto; 
     float: left;
     align-self: auto;
