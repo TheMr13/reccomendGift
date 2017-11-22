@@ -13,6 +13,11 @@ var response;
             
             console.log(response.output.text[0]);
 
+            var para = document.createElement("P");                       
+            var t = document.createTextNode(response.output.text[0]);      
+            para.appendChild(t);   
+            para.setAttribute("id", "onTheRight")                                     
+            document.getElementById("chatBox").appendChild(para);  
 
 
 
