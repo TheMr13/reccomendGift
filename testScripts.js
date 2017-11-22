@@ -7,7 +7,7 @@ var response;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
+            
             response = JSON.parse(this.responseText);
 
             
@@ -30,6 +30,7 @@ var response;
     
 }
 
+/*
 if (count == 0){
     align = "onTheLeft"
 } else {
@@ -41,3 +42,4 @@ var t = document.createTextNode("This is a paragraph.");      // Create a text n
 para.appendChild(t);   
 para.setAttribute("id", align)                                       // Append the text to <p>
 document.getElementById("some").appendChild(para);           // Append <p> to <div> with id="myDIV"
+*/
