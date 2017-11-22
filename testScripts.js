@@ -10,7 +10,10 @@ var message = "?userInput=" + document.getElementById("userInput").value
     };
 
 
-    xhttp.open("GET", custURL + message);
+    xhttp.open("GET", custURL + message + "get");
+    xhttp.send();
+
+    xhttp.open("POST", custURL + message + "post");
     xhttp.send();
     
     
