@@ -35,8 +35,13 @@ var response;
     xhttp.open("GET", custURL + message);
     xhttp.send();
 
-    chatbox.scrollTop = chatbox.scrollHeight;
+    
 }     
+
+function scroll(){
+    console.log("working");
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
 
 /*
 if (count == 0){
