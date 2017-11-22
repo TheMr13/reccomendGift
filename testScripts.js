@@ -12,12 +12,34 @@ var response;
 
             console.log(response);
             console.log(response.output.text[0]);
-            document.getElementById("myResult").innerHTML = document.getElementById("myResult").value + response.output.text[0]
+
+
+            var para = document.createElement("P");                       
+            var t = document.createTextNode(response.output.text[0]);      
+            para.appendChild(t);   
+            para.setAttribute("id", "onTheRight");
+            document.getElementById("chatbox").appendChild(para);  
+
+
         }
     };
 
 
     xhttp.open("GET", custURL + message);
     xhttp.send();
+
+    if (count == 0){
+        align = "onTheLeft"
+    } else {
+        align = "onTheRight"
+    }
+
+    var para = document.createElement("P");                       // Create a <p> element
+    var t = document.createTextNode("This is a paragraph.");      // Create a text node
+    para.appendChild(t);   
+    para.setAttribute("id", align)                                       // Append the text to <p>
+    document.getElementById("some").appendChild(para);           // Append <p> to <div> with id="myDIV"
+
+
     
 }
