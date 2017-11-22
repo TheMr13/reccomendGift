@@ -25,12 +25,11 @@ var response;
 }
 
 function bullshit(){
-    var para = document.createElement("P");                       // Create a <p> element
-    var t = document.createTextNode("This is a paragraph.");      // Create a text node
+    var para = document.createElement("P");                       
+    var t = document.createTextNode("This is a paragraph.");      
     para.appendChild(t);   
-    para.setAttribute("id", align)                                       // Append the text to <p>
-    document.getElementById("chatBox").appendChild(para);           // Append <p> to <div> with id="myDIV"
-}
+    para.setAttribute("id", "onTheRight")                                     
+    document.getElementById("chatBox").appendChild(para);           
 
 /*
 if (count == 0){
