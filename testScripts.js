@@ -1,3 +1,9 @@
+function scroll(){
+    console.log("working");
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+
 function posting() {
 
     var para = document.createElement("P");                       
@@ -38,10 +44,6 @@ var response;
     
 }     
 
-function scroll(){
-    console.log("working");
-    chatbox.scrollTop = chatbox.scrollHeight;
-}
 
 /*
 if (count == 0){
