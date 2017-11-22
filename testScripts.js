@@ -22,14 +22,14 @@ var response;
 
     xhttp.open("GET", custURL + message);
     xhttp.send();
+}
 
-
-
-    var para = document.createElement("P");                       
-    var t = document.createTextNode("this is a test");      
+function bullshit(){
+    var para = document.createElement("P");                       // Create a <p> element
+    var t = document.createTextNode("This is a paragraph.");      // Create a text node
     para.appendChild(t);   
-    para.setAttribute("id", "onTheRight");
-    document.getElementById("chatbox").appendChild(para);
+    para.setAttribute("id", align)                                       // Append the text to <p>
+    document.getElementById("chatBox").appendChild(para);           // Append <p> to <div> with id="myDIV"
 }
 
 /*
