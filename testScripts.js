@@ -1,11 +1,11 @@
 function scrolling() {
     console.log("scrolling is working");
-    //chatbox.scrollTop = chatbox.scrollHeight;
+    chatbox.scrollTop = chatbox.scrollHeight;
 }
 
 function testing() {
     console.log("testing is working");
-    //chatbox.scrollTop = chatbox.scrollHeight;
+    chatbox.scrollTop = chatbox.scrollHeight;
 }
 
 
