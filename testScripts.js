@@ -27,7 +27,17 @@ var response;
     xhttp.open("GET", custURL + message);
     xhttp.send();
 
-    
+    var para = document.createElement("P");                       
+    var t = document.createTextNode(response.output.text[0] + "number2");      
+    para.appendChild(t);   
+    para.setAttribute("id", "onTheRight");
+    document.getElementById("chatbox").appendChild(para);  
+
+    var para = document.createElement("P");                       
+    var t = document.createTextNode("this is a test");      
+    para.appendChild(t);   
+    para.setAttribute("id", "onTheRight");
+    document.getElementById("chatbox").appendChild(para);
 }
 
 /*
