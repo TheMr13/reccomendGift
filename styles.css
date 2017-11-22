@@ -1,0 +1,14 @@
+#chatBox {
+    border: 2px solid black;
+    height: 300px;
+    max-width: auto;
+    width: 100%;
+
+    overflow: auto; 
+    float: left;
+    align-self: auto;
+}
+
+#onTheRight{
+    text-align: right;
+}
