@@ -83,7 +83,7 @@ function addBotParagraph(botSpeech){
 
 function getBotAvatar(){
     var botAvatar = document.createElement("IMG");
-    botAvatar.setAttribute("src", "giphy.gif")
+    botAvatar.setAttribute("src", "robotHead.png")
     botAvatar.setAttribute("id", "botAvatar")
     botAvatar.setAttribute("align", "left")
     document.getElementById("botMessageContainer" + botParagraphCount).appendChild(botAvatar);
@@ -114,7 +114,7 @@ function showUserMessage() {
     
     function getUserAvatar(){
         var botAvatar = document.createElement("IMG");
-        botAvatar.setAttribute("src", "ranga.jpg")
+        botAvatar.setAttribute("src", "personHead.png")
         botAvatar.setAttribute("id", "userAvatar")
         botAvatar.setAttribute("align", "right")
         document.getElementById("userMessageContainer" + botParagraphCount).appendChild(botAvatar);

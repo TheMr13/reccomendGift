@@ -1,42 +1,23 @@
 #chatBox {
-    border: 5px solid #CC4D4D;
+
     min-height: 200px;
     height: auto;
     max-height: 600px;
     width: auto;
     max-width: 800px;
     overflow: auto; 
-    border-radius: 12px;
+
 }
 
 #body{
-    background-color: #FFFFFF;
+    background-color: #363636;
 }
 
+#buttons{
+    background-color: #2ecc71;
+    width: auto;
+}
 
-.btn {
-    background: #08a0ff;
-    background-image: -webkit-linear-gradient(top, #08a0ff, #104b70);
-    background-image: -moz-linear-gradient(top, #08a0ff, #104b70);
-    background-image: -ms-linear-gradient(top, #08a0ff, #104b70);
-    background-image: -o-linear-gradient(top, #08a0ff, #104b70);
-    background-image: linear-gradient(to bottom, #08a0ff, #104b70);
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 12px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #1a6a9c;
-    background-image: -webkit-linear-gradient(top, #1a6a9c, #3498db);
-    background-image: -moz-linear-gradient(top, #1a6a9c, #3498db);
-    background-image: -ms-linear-gradient(top, #1a6a9c, #3498db);
-    background-image: -o-linear-gradient(top, #1a6a9c, #3498db);
-    background-image: linear-gradient(to bottom, #1a6a9c, #3498db);
-    text-decoration: none;
-  }
 [id^=userMessageContainer]{
     width: 100%;
     float: right;
@@ -46,15 +27,17 @@
     width: auto;
     max-width: 50%;
     text-align: right;
-    background: #07BBF1;
+    background: #FFFFFF;
     min-height: 20px;
     float: right;
     position: relative;
     right: 5px;
     word-wrap: break-word;
     padding: 10px;
-    border: 5px solid rgba(78, 90, 219, 0.57);
-    border-radius: 20px;
+    border-top: 3px solid #cb8914;
+    border-radius: 5px;
+    font-family: arial verdana;
+    font-size: 20px;
  
 }
 
@@ -74,15 +57,17 @@
     width: auto;
     max-width: 50%;
     text-align: left;
-    background: #7DBBCC;
+    background: #FFFFFF;
     min-height: 20px;
     float: left;
     position: relative;
     right: 5px;
     word-wrap: break-word;
     padding: 10px;
-    border: 5px solid rgba(123, 127, 170, 0.57);
-    border-radius: 20px;
+    border-top: 3px solid #2ecc71;
+    border-radius: 5px;
+    font-family: arial verdana;
+    font-size: 20px;
 }
 
 #botAvatar {
@@ -110,12 +95,55 @@
 }
 
 #userInput{
-    height:35px;
+    background: #363636;
+    width: 80%;
+    padding: 7px;
+    height: 46px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 10px;
+    color: white;
+    border-width: 0;
+
+    
 }
+
+::-webkit-input-placeholder{
+    color:white;
+}
+
+#buttons{
+    background-color: #2ecc71;
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+.btn {
+    float: middle;
+    float: right;
+    width: 20%;
+    height: 48px;
+    position: relative;
+    right: 5px;
+    top: 1px;
+    background-color: #2ecc71;
+    border-width: 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+.btn:hover {
+    background-color: #54CF87;
+    text-decoration: none;
+  }
 
 #title{
     font-weight:bold;
-    color:#3E3EBE;
+    color:#FFFFFF;
     letter-spacing:0pt;
     font-size:50px;
     text-align:left;
@@ -132,17 +160,10 @@
     width: 12px;
 }
 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
+
 ::-webkit-scrollbar-track {
-      background-color: #b46868;
+      background-color: #2E2B2B;
 } /* the new scrollbar will have a flat appearance with the set background color */
  
 ::-webkit-scrollbar-thumb {

@@ -13,13 +13,16 @@
         <h1 id = "title" >RangaBot</h1>
         <p id ="chatBox"></p>
 
-        <input  placeholder="What can we help with?" id="userInput" onKeyDown="if(event.keyCode==13){getUserMessage(), posting(), showUserMessage()}">
-        <button class="btn" onclick = "getUserMessage(), posting(), showUserMessage()">Send</button>
-        <button class="btn" onclick="clearing()">Clear</button>
-        <button class="btn" onclick="ranga()">Ranga</button>
-        <button class="btn" onclick="getUserMessage(), tester()">Test Feature</button>
+        <div id="buttons">
+          <input  placeholder="What can we help with?" id="userInput" onKeyDown="if(event.keyCode==13){getUserMessage(), posting(), showUserMessage()}">
+          <button class="btn" onclick = "getUserMessage(), posting(), showUserMessage()">send</button>
+          
+        </div>
+          
+        <!--<button class="btn" onclick="clearing()">Clear</button>-->
+        <!--<button class="btn" onclick="ranga()">Ranga</button>-->
+        <!--<button class="btn" onclick="getUserMessage(), tester()">Test Feature</button>-->
         <p id = "myResult"></p>
-    
 
     </body>
 
