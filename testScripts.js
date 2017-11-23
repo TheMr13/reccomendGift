@@ -235,13 +235,13 @@ function showDistance() {
                 console.log(img);
 
                 var para = document.createElement("P");                       
-                para.setAttribute("id", "imageContainer")                                     
+                para.setAttribute("id", "imageContainer" + botParagraphCount)                                     
                 document.getElementById("chatBox").appendChild(para);
 
                 img.setAttribute("id", "siteImage");
                 a.setAttribute("align", "left");
                 img.setAttribute("align", "left");
-                document.getElementById("imageContainer").appendChild(a).appendChild(img);
+                document.getElementById("imageContainer" + botParagraphCount).appendChild(a).appendChild(img);
 
                 scroll()
             }
