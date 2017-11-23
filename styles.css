@@ -1,12 +1,156 @@
 #chatBox {
-    border: 2px solid black;
-    height: 300px;
-    max-width: auto;
+    border: 5px solid #CC4D4D;
+    min-height: 200px;
+    height: auto;
+    max-height: 600px;
+    width: auto;
+    max-width: 800px;
+    min-width: 100px;
+    overflow-y: scroll; 
+    border-radius: 12px;
+}
+
+#body{
+    background-color: #FFFFFF;
+}
+
+
+.btn {
+    background: #08a0ff;
+    background-image: -webkit-linear-gradient(top, #08a0ff, #104b70);
+    background-image: -moz-linear-gradient(top, #08a0ff, #104b70);
+    background-image: -ms-linear-gradient(top, #08a0ff, #104b70);
+    background-image: -o-linear-gradient(top, #08a0ff, #104b70);
+    background-image: linear-gradient(to bottom, #08a0ff, #104b70);
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #1a6a9c;
+    background-image: -webkit-linear-gradient(top, #1a6a9c, #3498db);
+    background-image: -moz-linear-gradient(top, #1a6a9c, #3498db);
+    background-image: -ms-linear-gradient(top, #1a6a9c, #3498db);
+    background-image: -o-linear-gradient(top, #1a6a9c, #3498db);
+    background-image: linear-gradient(to bottom, #1a6a9c, #3498db);
+    text-decoration: none;
+  }
+[id^=userMessageContainer]{
     width: 100%;
-    overflow: auto; 
-
+    float: right;
 }
 
-#onTheRight{
+[id^=onTheRight]{
+    width: auto;
+    max-width: 50%;
     text-align: right;
+    background: #07BBF1;
+    min-height: 20px;
+    float: right;
+    position: relative;
+    right: 5px;
+    word-wrap: break-word;
+    padding: 10px;
+    border: 5px solid rgba(78, 90, 219, 0.57);
+    border-radius: 20px;
+ 
 }
+
+#userAvatar {
+    border-radius: 50%;
+    padding: 5px;
+    width: 50px;
+    float: right;
+}
+
+[id^=userMessageContainer]{
+    width: 100%;
+    float: left;
+}
+
+[id^=onTheLeft]{
+    width: auto;
+    max-width: 50%;
+    text-align: left;
+    background: #7DBBCC;
+    min-height: 20px;
+    float: left;
+    position: relative;
+    right: 5px;
+    word-wrap: break-word;
+    padding: 10px;
+    border: 5px solid rgba(123, 127, 170, 0.57);
+    border-radius: 20px;
+}
+
+#botAvatar {
+    border-radius: 50%;
+    padding: 5px;
+    width: 50px;
+}
+
+#ranga{
+    border-radius: 50%;
+    padding: 5px;
+    width: 380px;
+    margin-left: 25%;
+}
+
+#siteImage {
+    width: auto;
+    align-self: left;
+}
+
+[id^=imageContainer] { 
+    width: 100%;  
+    float: left;
+    margin-left: 40px;
+}
+
+#userInput{
+    height:35px;
+}
+
+#title{
+    font-weight:bold;
+    color:#3E3EBE;
+    letter-spacing:0pt;
+    font-size:50px;
+    text-align:left;
+    font-family:trebuchet MS, sans-serif;
+    line-height:1;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+} 
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-track {
+      background-color: #b46868;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */

@@ -7,16 +7,19 @@
         <link href = "styles.css" rel="stylesheet"></link>
     </head>
 
-    <body>
-      <h1>Chat Bot</h1>
-      <p id ="chatBox"></p>
-      
-      <input type="text" placeholder="type the object value here" id="userInput">
-      <button onclick = "posting()">Send</button>
-      <p id = "myResult"></p>
-      
+    <body id = "body">
 
-      
+
+        <h1 id = "title" >RangaBot</h1>
+        <p id ="chatBox"></p>
+
+        <input  placeholder="What can we help with?" id="userInput" onKeyDown="if(event.keyCode==13){getUserMessage(), posting(), showUserMessage()}">
+        <button class="btn" onclick = "getUserMessage(), posting(), showUserMessage()">Send</button>
+        <button class="btn" onclick="clearing()">Clear</button>
+        <button class="btn" onclick="ranga()">Ranga</button>
+        <button class="btn" onclick="getUserMessage(), tester()">Test Feature</button>
+        <p id = "myResult"></p>
+    
 
     </body>
 
