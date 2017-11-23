@@ -242,10 +242,12 @@ function showDistance() {
                 a.setAttribute("align", "left");
                 img.setAttribute("align", "left");
                 document.getElementById("imageContainer").appendChild(a).appendChild(img);
+
+                scroll()
             }
         }
         xhr.open("GET", url, true);
         xhr.send();
 
-        scroll()
+        
     }
