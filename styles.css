@@ -5,7 +5,7 @@
     max-height: 600px;
     width: auto;
     max-width: 800px;
-    overflow-y: scroll; 
+    overflow: auto; 
     border-radius: 12px;
 }
 

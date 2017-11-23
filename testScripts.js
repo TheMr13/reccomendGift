@@ -226,25 +226,32 @@ function showDistance() {
         xhr.responseType = "document";
         xhr.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var imgLink = "http://www.livingandgiving.co.nz/" + this.response.getElementById("productdetailimg").getAttribute("src");
-                var a = document.createElement("a");
-                var img = document.createElement("img");
-                img.src = imgLink;
-                a.href = url;
-                a.target="_blank"
-                console.log(img);
+                    
+                    if(this.response.getElementById("productdetailimg") != null){
+                        var imgLink = "http://www.livingandgiving.co.nz/" + this.response.getElementById("productdetailimg").getAttribute("src");
+                        var a = document.createElement("a");
+                        var img = document.createElement("img");
+                        img.src = imgLink;
+                        a.href = url;
+                        a.target="_blank"
+                        console.log(img);
 
-                var para = document.createElement("P");                       
-                para.setAttribute("id", "imageContainer" + botParagraphCount)                                     
-                document.getElementById("chatBox").appendChild(para);
+                        var para = document.createElement("P");                       
+                        para.setAttribute("id", "imageContainer" + botParagraphCount)                                     
+                        document.getElementById("chatBox").appendChild(para);
 
-                img.setAttribute("id", "siteImage");
-                a.setAttribute("align", "left");
-                img.setAttribute("align", "left");
-                document.getElementById("imageContainer" + botParagraphCount).appendChild(a).appendChild(img);
-
-                scroll()
+                        img.setAttribute("id", "siteImage");
+                        a.setAttribute("align", "left");
+                        img.setAttribute("align", "left");
+                        document.getElementById("imageContainer" + botParagraphCount).appendChild(a).appendChild(img);
+                    } else {
+                        console.log("blahblah")
+                        blankUserContainer()
+                        addBotParagraph(imageURL);
+                    }
+                
             }
+            scroll()
         }
         xhr.open("GET", url, true);
         xhr.send();
