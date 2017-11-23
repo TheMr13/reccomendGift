@@ -235,7 +235,7 @@ function showDistance() {
                 console.log(img);
 
                 var para = document.createElement("P");                       
-                para.setAttribute("id", "imageContainer" + botParagraphCount)                                     
+                para.setAttribute("id", "imageContainer")                                     
                 document.getElementById("chatBox").appendChild(para);
 
                 img.setAttribute("id", "siteImage");
