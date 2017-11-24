@@ -208,6 +208,7 @@ function showDistance() {
                 var main = response.list[7].weather[0].main; 
                 var description = response.list[7].weather[0].description;            
                 addBotParagraph("Weather tomorrow is " + main + ", " + description);
+                addBotParagraph("And remember. We offer free nz shipping for orders over $25!");
                 blankUserContainer()
             }
         }
