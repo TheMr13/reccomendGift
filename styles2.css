@@ -2,21 +2,21 @@
 
     min-height: 200px;
     height: 70%;
-    
+    width: auto;
     max-width: 800px;
     overflow: auto; 
+
+
 }
 
 #container{
+    background-color: #BDB8B8;
     width: auto;
     max-width: 800px;
-    position: relative;
-    left: 20%;
 }
 
 #body{
-    background-color: #363636;
-    border: 10px border-style red;
+    background-color: #FFFFFF;
 }
 
 #buttons{
@@ -33,7 +33,7 @@
     width: auto;
     max-width: 50%;
     text-align: right;
-    background: #FFFFFF;
+    background: #363636;
     min-height: 20px;
     float: right;
     position: relative;
@@ -44,6 +44,7 @@
     border-radius: 5px;
     font-family: arial verdana;
     font-size: 20px;
+    color: white;
  
 }
 
@@ -63,7 +64,7 @@
     width: auto;
     max-width: 50%;
     text-align: left;
-    background: #FFFFFF;
+    background: #363636;
     min-height: 20px;
     float: left;
     position: relative;
@@ -74,6 +75,7 @@
     border-radius: 5px;
     font-family: arial verdana;
     font-size: 20px;
+    color: white;
 }
 
 #botAvatar {
@@ -149,13 +151,12 @@
 
 #title{
     font-weight:bold;
-    color:#FFFFFF;
+    color:#363636;
     letter-spacing:0pt;
     font-size:50px;
+    text-align:left;
     font-family:trebuchet MS, sans-serif;
     line-height:1;
-    position: relative;
-    left: 35%;
 }
 
 
