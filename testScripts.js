@@ -235,19 +235,21 @@ function showDistance() {
                         a.href = url;
                         a.target="_blank"
                         console.log(img);
-
+                        
                         var para = document.createElement("P");                       
                         para.setAttribute("id", "imageContainer" + botParagraphCount)                                     
                         document.getElementById("chatBox").appendChild(para);
-
+                        
                         img.setAttribute("id", "siteImage");
                         a.setAttribute("align", "left");
                         img.setAttribute("align", "left");
                         document.getElementById("imageContainer" + botParagraphCount).appendChild(a).appendChild(img);
+                        
                     } else {
                         console.log("blahblah")
                         blankUserContainer()
                         addBotParagraph(imageURL);
+                        scroll()
                     }
                 
             }
